@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #e6f2ff, #b3d9ff);
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: #f0f4f8;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-title {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 24px;
+}
+
+.card-description {
+    margin: 10px 0 0;
+    color: #7f8c8d;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-footer {
+    background-color: #f0f4f8;
+    padding: 20px;
+}
+
+.tabs {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #7f8c8d;
+}
+
+.tab-button.active {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+}
+
+.space-y-6 > * + * {
+    margin-top: 24px;
+}
+
+.space-y-2 > * + * {
+    margin-top: 8px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.button-primary,
+.button-secondary {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-primary {
+    background-color: #3498db;
+    color: white;
+}
+
+.button-secondary {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.button-primary:hover {
+    background-color: #2980b9;
+}
+
+.button-secondary:hover {
+    background-color: #27ae60;
+}
+
+.flex {
+    display: flex;
+    gap: 10px;
+}
+
+#video {
+    width: 100%;
+    max-width: 640px;
+    margin-bottom: 10px;
+}
+
+#patientPhoto {
+    max-width: 100%;
+    height: auto;
+    max-height: 240px;
+}
+
+.analysis-content {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+}
